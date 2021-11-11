@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Rambaan</string>
+    <string name="Logo">Our Main Logo</string>
+    <string name="Rights">from</string>
+    <string name="Copyrights">Ramayana</string>
+    <string name="img">oneImg</string>
+    <string name="Scroll">horizontal</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

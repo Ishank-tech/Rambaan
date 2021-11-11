@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".output">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp">
+
+
+    <!--<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/place1"
+            android:layout_width="wrap_content"
+            android:layout_height="96dp"
+            android:fontFamily="@font/arbutus_slab"
+            android:text="Place of Chaupai"
+            android:padding="2dp"
+            android:gravity="center"
+            android:layout_marginLeft="16dp"/>
+
+        <TextView
+            android:id="@+id/place"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginRight="16dp"
+            android:padding="2dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:hint="place of chaupai will be shown here" />
+
+    </LinearLayout>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/res1"
+            android:layout_width="wrap_content"
+            android:layout_height="96dp"
+            android:fontFamily="@font/arbutus_slab"
+            android:text="Your Result"
+            android:padding="2dp"
+            android:gravity="center"
+            android:layout_marginLeft="16dp"/>
+
+        <TextView
+            android:id="@+id/res"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginRight="16dp"
+            android:padding="2dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:hint="Your result will be shown here" />
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

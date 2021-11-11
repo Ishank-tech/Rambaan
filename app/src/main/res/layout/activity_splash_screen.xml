@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/logo"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SplashScreenActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="131dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="95dp"
+        android:layout_marginTop="187dp"
+        android:layout_marginEnd="94dp"
+        android:layout_marginBottom="285dp"
+        android:contentDescription="@string/Logo"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="152dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="131dp"
+        android:layout_marginEnd="128dp"
+        android:layout_marginBottom="98dp"
+        android:fontFamily="@font/arbutus_slab"
+        android:text="@string/Rights"
+        android:textAlignment="center"
+        android:textColor="#403F3F"
+        android:textSize="20sp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="65dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="94dp"
+        android:layout_marginEnd="85dp"
+        android:layout_marginBottom="33dp"
+        android:fontFamily="@font/shrikhand"
+        android:shadowColor="#050505"
+        android:text="@string/Copyrights"
+        android:textAlignment="center"
+        android:textColor="#F2EA1741"
+        android:textColorHighlight="#2AA17F"
+        android:textSize="30sp" />
+</RelativeLayout>
