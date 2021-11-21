@@ -8,4 +8,34 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
+    <!--Buttons-->
+    <string name="skip_btn">Skip</string>
+    <string name="next_btn">Next</string>
+    <string name="let_get_started">Lets Get Started</string>
+
+    <!--Headings-->
+    <string name="first_slide_title">Scroll The Happiness</string>
+    <string name="second_slide_title">One Tap Solution</string>
+    <string name="third_slide_title">Feel The Vibes</string>
+    <string name="fourth_slide_title">Say Bye to your Problems</string>
+
+    <!--Descriptions-->
+    <string name="first_slide_desc">Enjoy every meme and share the happiness among your friends and the near ones. Get updated with trends.</string>
+    <string name="second_slide_desc">
+        <br> Get the answer of your desired question by just tapping on any button on questionnare while thinking about your question.\n</br>
+        <br> <b> Instructions to be followed are : \n </b></br>
+        <br> 1.Through this Questionnare, whenever you wants to get the answer of your desired question, then first of all you should meditate by remembering god.\n</br>
+        <br> 2.After that,with faith, contemplating the desired question from the mind, the finger should be placed in the desired parenthesis of the questionnare and the answer will be in front of you.</br>
+    </string>
+    <string name="third_slide_desc">Music is the only way to forget all your problems away.Listen and Feel the vibes. Music has the power to lift you up from any problem and diverting your mind towards positivity.</string>
+    <string name="fourth_slide_desc"> All your problems will be vanished if you work upon it.
+    NO MATTER WHAT OUR PROBLEM, GOD IS THE ONLY SOLUTION.</string>
+    <string name="slide">onBoarding</string>
+    <string name="viewPager">LoginActivity</string>
+    <string name="tabLayout">loginLayout</string>
+    <string name="icon">google</string>
+    <string name="icon2">fb</string>
+    <string name="icon3">twitter</string>
+
+
 </resources>

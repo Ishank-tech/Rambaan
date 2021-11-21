@@ -3,10 +3,16 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/user/AndroidStudioProjects/Rambaan/app/src/main/res/drawable/button_bg.xml" value="0.1925925925925926" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Rambaan/app/src/main/res/drawable/edit_text_bg.xml" value="0.1925925925925926" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Rambaan/app/src/main/res/drawable/vie_bg.xml" value="0.1925925925925926" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Rambaan/app/src/main/res/layout-v21/activity_login.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/user/AndroidStudioProjects/Rambaan/app/src/main/res/layout/activity_account.xml" value="0.1" />
         <entry key="..\:/Users/user/AndroidStudioProjects/Rambaan/app/src/main/res/layout/activity_home.xml" value="0.14" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Rambaan/app/src/main/res/layout/activity_login.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/user/AndroidStudioProjects/Rambaan/app/src/main/res/layout/activity_main.xml" value="0.18" />
         <entry key="..\:/Users/user/AndroidStudioProjects/Rambaan/app/src/main/res/layout/activity_music.xml" value="0.1" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Rambaan/app/src/main/res/layout/activity_onboarding.xml" value="0.22" />
         <entry key="..\:/Users/user/AndroidStudioProjects/Rambaan/app/src/main/res/layout/activity_output.xml" value="0.25" />
         <entry key="..\:/Users/user/AndroidStudioProjects/Rambaan/app/src/main/res/layout/activity_questionnare.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/user/AndroidStudioProjects/Rambaan/app/src/main/res/layout/activity_splash_screen.xml" value="0.10960144927536232" />
@@ -14,6 +20,9 @@
         <entry key="..\:/Users/user/AndroidStudioProjects/Rambaan/app/src/main/res/layout/fragment_home.xml" value="0.1" />
         <entry key="..\:/Users/user/AndroidStudioProjects/Rambaan/app/src/main/res/layout/fragment_music.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/user/AndroidStudioProjects/Rambaan/app/src/main/res/layout/fragment_questionnare.xml" value="0.1" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Rambaan/app/src/main/res/layout/login_tab_fragment.xml" value="0.18" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Rambaan/app/src/main/res/layout/signup_tab_fragment.xml" value="0.16" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Rambaan/app/src/main/res/layout/slides_layout.xml" value="0.2" />
       </map>
     </option>
   </component>

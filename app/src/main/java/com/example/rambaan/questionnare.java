@@ -14,6 +14,7 @@ public class questionnare extends AppCompatActivity {
         setContentView(R.layout.activity_questionnare);
 
 
+
     }
     public void click(View view){
         int id = view.getId();
