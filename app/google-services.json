@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "713980697016",
+    "project_id": "rambaan-bdffa",
+    "storage_bucket": "rambaan-bdffa.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:713980697016:android:331b5d705a55c7b991574d",
+        "android_client_info": {
+          "package_name": "com.example.rambaan"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "713980697016-kseeoit0enahgqs938efc32o4m46bl6r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCoMoNw4DMh3QAGS8UC1k7ZWipTBkgnrJk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "713980697016-kseeoit0enahgqs938efc32o4m46bl6r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

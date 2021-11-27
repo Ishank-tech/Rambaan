@@ -308,6 +308,10 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    public void addAccount(View view){
+        Intent intent = new Intent(MainActivity.this,loginActivity.class);
+    }
+
     private void loadFragment(Fragment fragment) {
         getSupportFragmentManager().beginTransaction().replace(R.id.framelayout,fragment).commit();
     }

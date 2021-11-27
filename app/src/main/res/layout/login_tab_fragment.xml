@@ -2,7 +2,8 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/countBackgroundColor">
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/email"
@@ -120,14 +121,15 @@
             android:layout_centerVertical="true"/>
 
         <Button
+            android:id="@+id/forget_pass"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
             android:background="#00000000"
             android:text="Forget Password"
-            android:textColor="@color/black"
-            android:layout_centerVertical="true"/>
+            android:textColor="@color/black" />
 
     </RelativeLayout>
 

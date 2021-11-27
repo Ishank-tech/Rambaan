@@ -36,6 +36,7 @@
     <string name="icon">google</string>
     <string name="icon2">fb</string>
     <string name="icon3">twitter</string>
+    <string name="pinview">OTPcode</string>
 
 
 </resources>
