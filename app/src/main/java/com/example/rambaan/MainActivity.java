@@ -3,8 +3,10 @@ package com.example.rambaan;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
+import androidx.viewpager.widget.ViewPager;
 
 import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
@@ -12,10 +14,27 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.etebarian.meowbottomnavigation.MeowBottomNavigation;
+import com.google.ar.core.AugmentedFace;
+import com.google.ar.core.Frame;
+import com.google.ar.core.TrackingState;
+import com.google.ar.sceneform.rendering.ModelRenderable;
+import com.google.ar.sceneform.rendering.Renderable;
+import com.google.ar.sceneform.rendering.Texture;
+import com.google.ar.sceneform.ux.AugmentedFaceNode;
+
+import java.util.Collection;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Map;
 
 public class MainActivity extends AppCompatActivity {
 
     //public ImageView [] a = new ImageView[225];
+
+//    private ModelRenderable modelRenderable;
+//    private Texture texture;
+//    private boolean isAdded = false;
+//    private final HashMap<AugmentedFace, AugmentedFaceNode> faceNodeMap = new HashMap<AugmentedFace, AugmentedFaceNode>();
 
     MeowBottomNavigation bottomNavigation;
 
@@ -25,7 +44,11 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         getSupportActionBar().hide();
 
+//        ViewPager viewPager = (ViewPager) findViewById(R.id.viewpager);
+//        CustomArFragment customArFragment = (CustomArFragment) getSupportFragmentManager().findFragmentById(R.id.arFragment);
+
         bottomNavigation = findViewById(R.id.bottom_navigation);
+
         bottomNavigation.add(new MeowBottomNavigation.Model(1,R.drawable.ic_baseline_home_24));
         bottomNavigation.add(new MeowBottomNavigation.Model(2,R.drawable.ic_baseline_grid_on_24));
         bottomNavigation.add(new MeowBottomNavigation.Model(3,R.drawable.ic_baseline_music_note_24));
@@ -39,19 +62,25 @@ public class MainActivity extends AppCompatActivity {
                 switch(item.getId()){
                     case 1:
                         fragment = new HomeFragment();
+                        loadFragment(fragment);
                         break;
                     case 2:
-                        Intent intent = new Intent(MainActivity.this,questionnare.class);
-                        startActivity(intent);
+                        fragment = new QuestionnareFragment();
+//                        Intent intent = new Intent(MainActivity.this,questionnare.class);
+//                        startActivity(intent);
+                        loadFragment(fragment);
                         break;
                     case 3:
-                        fragment = new MusicFragment();
+//                        fragment = new MusicFragment();
+                        Intent intent = new Intent(MainActivity.this,SnapActivity.class);
+                        startActivity(intent);
                         break;
                     case 4:
                         fragment = new AccountFragment();
+                        loadFragment(fragment);
                         break;
                 }
-                loadFragment(fragment);
+
             }
         });
 
@@ -62,23 +91,31 @@ public class MainActivity extends AppCompatActivity {
                 switch(item.getId()){
                     case 1:
                         fragment = new HomeFragment();
+                        loadFragment(fragment);
                         break;
                     case 2:
-                        Intent intent = new Intent(MainActivity.this,questionnare.class);
-                        startActivity(intent);
+                        fragment = new QuestionnareFragment();
+//                        Intent intent = new Intent(MainActivity.this,questionnare.class);
+//                        startActivity(intent);
+                        loadFragment(fragment);
                         break;
                     case 3:
-                        fragment = new MusicFragment();
+//                        fragment = new MusicFragment();
+                        Intent intent = new Intent(MainActivity.this,SnapActivity.class);
+                        startActivity(intent);
+
                         break;
                     case 4:
                         fragment = new AccountFragment();
+                        loadFragment(fragment);
                         break;
                 }
-                loadFragment(fragment);
+
             }
         });
 
         bottomNavigation.show(1,true);
+
 
             /*a[0]=findViewById(R.id.imageView1);
             a[1]=findViewById(R.id.imageView2);
@@ -309,11 +346,14 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void addAccount(View view){
-        Intent intent = new Intent(MainActivity.this,loginActivity.class);
+        Intent intent = new Intent(MainActivity.this,Startup_for_login_signup.class);
+        startActivity(intent);
+        finish();
     }
 
     private void loadFragment(Fragment fragment) {
-        getSupportFragmentManager().beginTransaction().replace(R.id.framelayout,fragment).commit();
+        getSupportFragmentManager().beginTransaction().replace(R.id.view,fragment).commit();
+
     }
 
 

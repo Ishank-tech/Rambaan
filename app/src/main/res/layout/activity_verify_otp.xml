@@ -16,7 +16,7 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/ic_baseline_close"
+            app:srcCompat="@drawable/ic_baseline_close"
             app:tint="@color/black"
             android:contentDescription="close activity"
             android:padding="5dp"/>
@@ -84,7 +84,8 @@
             android:textSize="16sp"
             android:textStyle="bold"
             android:background="@drawable/button_bg"
-            android:layout_marginTop="30dp"/>
+            android:layout_marginTop="30dp"
+            android:onClick="callNextfromOTP"/>
 
     </LinearLayout>
 

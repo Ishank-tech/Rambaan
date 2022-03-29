@@ -35,7 +35,7 @@ public class nextSignupScreen extends AppCompatActivity {
 
     }
     public void back(View view){
-        Intent intent = new Intent(nextSignupScreen.this, SignupTabFragment.class);
+        Intent intent = new Intent(nextSignupScreen.this, Signup_first_screen.class);
         startActivity(intent);
     }
 
@@ -43,6 +43,11 @@ public class nextSignupScreen extends AppCompatActivity {
         if(!validateGender() | !validateAge()){
             return;
         }
+
+        String _fullName = getIntent().getStringExtra("Name");
+        String _Email = getIntent().getStringExtra("Email");
+        String _Username = getIntent().getStringExtra("Username");
+        String _Password = getIntent().getStringExtra("Password");
 
         selectedGender = findViewById(radioGroup.getCheckedRadioButtonId());
         String _gender = selectedGender.getText().toString();
@@ -56,11 +61,16 @@ public class nextSignupScreen extends AppCompatActivity {
         Intent intent = new Intent(nextSignupScreen.this, thirdSignupScreen.class);
         intent.putExtra("Gender",_gender);
         intent.putExtra("DOB",date);
-        Bundle bundle = getIntent().getExtras();
+        intent.putExtra("Name",_fullName);
+        intent.putExtra("Email",_Email);
+        intent.putExtra("Username",_Username);
+        intent.putExtra("Password",_Password);
+        /*Bundle bundle = getIntent().getExtras();
         if(bundle != null){
             intent.putExtras(bundle);
-        }
+        }*/
         startActivity(intent);
+        finish();
     }
 
     private Boolean validateGender(){

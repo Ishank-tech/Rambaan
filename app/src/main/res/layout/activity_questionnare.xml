@@ -2,9 +2,10 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/questionnare"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".questionnare">
+    tools:context=".QuestionnareFragment">
 
     <TextView
         android:layout_width="match_parent"
@@ -12,6 +13,7 @@
         android:layout_marginTop="10dp"
         android:fontFamily="@font/arbutus_slab"
         android:gravity="center"
+        android:textColor="@color/black"
         android:text="Questionnare"
         android:textSize="40dp"
         android:textStyle="bold" />
@@ -19,6 +21,7 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:id="@+id/root"
         android:orientation="vertical"
         android:layout_marginTop="80dp"
         android:layout_marginBottom="50dp"

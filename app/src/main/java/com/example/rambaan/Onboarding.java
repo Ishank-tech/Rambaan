@@ -69,7 +69,7 @@ public class Onboarding extends AppCompatActivity {
         }
 
         if(dots.length>0){
-            dots[position].setTextColor(getResources().getColor(R.color.design_default_color_primary_dark));
+            dots[position].setTextColor(getResources().getColor(R.color.black));
         }
 
     }

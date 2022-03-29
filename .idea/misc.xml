@@ -11,20 +11,26 @@
         <entry key="..\:/Users/user/AndroidStudioProjects/Rambaan/app/src/main/res/layout/activity_account.xml" value="0.1" />
         <entry key="..\:/Users/user/AndroidStudioProjects/Rambaan/app/src/main/res/layout/activity_home.xml" value="0.14" />
         <entry key="..\:/Users/user/AndroidStudioProjects/Rambaan/app/src/main/res/layout/activity_login.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Rambaan/app/src/main/res/layout/activity_login_first_screen.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/user/AndroidStudioProjects/Rambaan/app/src/main/res/layout/activity_main.xml" value="0.18" />
         <entry key="..\:/Users/user/AndroidStudioProjects/Rambaan/app/src/main/res/layout/activity_music.xml" value="0.1" />
         <entry key="..\:/Users/user/AndroidStudioProjects/Rambaan/app/src/main/res/layout/activity_next_signup_screen.xml" value="0.2" />
         <entry key="..\:/Users/user/AndroidStudioProjects/Rambaan/app/src/main/res/layout/activity_onboarding.xml" value="0.22" />
         <entry key="..\:/Users/user/AndroidStudioProjects/Rambaan/app/src/main/res/layout/activity_output.xml" value="0.25" />
         <entry key="..\:/Users/user/AndroidStudioProjects/Rambaan/app/src/main/res/layout/activity_questionnare.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Rambaan/app/src/main/res/layout/activity_show_capture.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Rambaan/app/src/main/res/layout/activity_signup_first_screen.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Rambaan/app/src/main/res/layout/activity_snap.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/user/AndroidStudioProjects/Rambaan/app/src/main/res/layout/activity_splash_screen.xml" value="0.10960144927536232" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Rambaan/app/src/main/res/layout/activity_startup_for_login_signup.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/user/AndroidStudioProjects/Rambaan/app/src/main/res/layout/activity_third_signup_screen.xml" value="0.2" />
         <entry key="..\:/Users/user/AndroidStudioProjects/Rambaan/app/src/main/res/layout/activity_verify_otp.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Rambaan/app/src/main/res/layout/category_activity.xml" value="0.19202898550724637" />
         <entry key="..\:/Users/user/AndroidStudioProjects/Rambaan/app/src/main/res/layout/fragment_account.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/user/AndroidStudioProjects/Rambaan/app/src/main/res/layout/fragment_home.xml" value="0.1" />
         <entry key="..\:/Users/user/AndroidStudioProjects/Rambaan/app/src/main/res/layout/fragment_music.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/user/AndroidStudioProjects/Rambaan/app/src/main/res/layout/fragment_next_signup.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/user/AndroidStudioProjects/Rambaan/app/src/main/res/layout/fragment_questionnare.xml" value="0.1" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Rambaan/app/src/main/res/layout/fragment_questionnare.xml" value="0.18" />
         <entry key="..\:/Users/user/AndroidStudioProjects/Rambaan/app/src/main/res/layout/login_tab_fragment.xml" value="0.18" />
         <entry key="..\:/Users/user/AndroidStudioProjects/Rambaan/app/src/main/res/layout/signup_tab_fragment.xml" value="0.16" />
         <entry key="..\:/Users/user/AndroidStudioProjects/Rambaan/app/src/main/res/layout/slides_layout.xml" value="0.2" />

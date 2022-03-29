@@ -1,19 +1,15 @@
 package com.example.rambaan;
 
-import android.app.DownloadManager;
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.content.Intent;
 import android.os.Bundle;
-import android.view.LayoutInflater;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import androidx.annotation.NonNull;
-import androidx.fragment.app.Fragment;
-
-import com.google.android.material.textfield.TextInputEditText;
 import com.google.android.material.textfield.TextInputLayout;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -21,7 +17,7 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.Query;
 import com.google.firebase.database.ValueEventListener;
 
-public class LoginTabFragment extends Fragment {
+public class Login_first_screen extends AppCompatActivity {
 
     TextInputLayout email,pass;
     TextView forgetPass;
@@ -29,13 +25,14 @@ public class LoginTabFragment extends Fragment {
     float v=0;
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        ViewGroup root = (ViewGroup) inflater.inflate(R.layout.login_tab_fragment,container,false);
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_login_first_screen);
 
-        email = root.findViewById(R.id.email);
-        pass = root.findViewById(R.id.password);
-        forgetPass = root.findViewById(R.id.forget_pass);
-        login = root.findViewById(R.id.login_btn);
+        email = findViewById(R.id.email);
+        pass = findViewById(R.id.password);
+        forgetPass = findViewById(R.id.forget_pass);
+        login = findViewById(R.id.login_btn);
 
         email.setTranslationX(800);
         pass.setTranslationX(800);
@@ -82,28 +79,34 @@ public class LoginTabFragment extends Fragment {
                                 String _phoneNo = snapshot.child(_email).child("phoneNo").getValue(String.class);
                                 String _gender = snapshot.child(_email).child("gender").getValue(String.class);
 
+                                Intent intent = new Intent(Login_first_screen.this,MainActivity.class);
 
+                                startActivity(intent);
 
                             }
                             else{
-                                Toast.makeText(getActivity(), "Password does not match!", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(Login_first_screen.this, "Password does not match!", Toast.LENGTH_SHORT).show();
                             }
                         }
                         else{
-                            Toast.makeText(getActivity(), "No such user exist!", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(Login_first_screen.this, "No such user exist!", Toast.LENGTH_SHORT).show();
                         }
                     }
 
                     @Override
                     public void onCancelled(@NonNull DatabaseError error) {
-                        Toast.makeText(getActivity(), error.getMessage(), Toast.LENGTH_SHORT).show();
+                        Toast.makeText(Login_first_screen.this, error.getMessage(), Toast.LENGTH_SHORT).show();
                     }
                 });
-
             }
         });
 
-        return root;
+    }
+
+    public void back2(View view){
+        Intent intent = new Intent(Login_first_screen.this,Startup_for_login_signup.class);
+        startActivity(intent);
+        finish();
     }
 
     private boolean validateEmail(){

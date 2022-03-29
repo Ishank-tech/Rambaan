@@ -46,7 +46,7 @@ public class VerifyOTP extends AppCompatActivity {
         password = getIntent().getStringExtra("Password");
         dob = getIntent().getStringExtra("DOB");
         gender = getIntent().getStringExtra("Gender");
-        phoneNo = getIntent().getStringExtra("phoneNo");
+        phoneNo = getIntent().getStringExtra("PhoneNo");
 
         sendVerificationCodeToUser(phoneNo);
 
@@ -116,6 +116,9 @@ public class VerifyOTP extends AppCompatActivity {
                         if (task.isSuccessful()) {
 
                             storeNewUsersData();
+                            Intent intent = new Intent(VerifyOTP.this,MainActivity.class);
+                            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                            startActivity(intent);
 
                         } else {
                             if (task.getException() instanceof FirebaseAuthInvalidCredentialsException) {
@@ -132,7 +135,14 @@ public class VerifyOTP extends AppCompatActivity {
         DatabaseReference reference = rootNode.getReference("Users");
 
         UserHelperClass addNewUser = new UserHelperClass(fullname, username, email, phoneNo, password, dob, gender);
-        reference.child(email).setValue(addNewUser);
+        reference.child(phoneNo).setValue(addNewUser);
 
+    }
+
+    public void callNextfromOTP(View view){
+        String code = pinFromUser.getText().toString();
+        if(!code.isEmpty()){
+            verifyCode(code);
+        }
     }
 }
