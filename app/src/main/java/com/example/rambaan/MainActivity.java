@@ -21,6 +21,8 @@ import com.google.ar.sceneform.rendering.ModelRenderable;
 import com.google.ar.sceneform.rendering.Renderable;
 import com.google.ar.sceneform.rendering.Texture;
 import com.google.ar.sceneform.ux.AugmentedFaceNode;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
 import java.util.Collection;
 import java.util.HashMap;
@@ -37,12 +39,26 @@ public class MainActivity extends AppCompatActivity {
 //    private final HashMap<AugmentedFace, AugmentedFaceNode> faceNodeMap = new HashMap<AugmentedFace, AugmentedFaceNode>();
 
     MeowBottomNavigation bottomNavigation;
+    String _fullName, _email, _username, _password, _dob, _gender, _phoneNo;
+    FirebaseUser user;
+
+//    @Override
+//    protected void onStart() {
+//        super.onStart();
+////        FirebaseUser user = mAuth.getCurrentUser();
+//        if(user==null){
+//            Intent intent = new Intent(this, Startup_for_login_signup.class);
+//            startActivity(intent);
+//        }
+//    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         getSupportActionBar().hide();
+
+//        user = getIntent().getParcelableExtra("user");
 
 //        ViewPager viewPager = (ViewPager) findViewById(R.id.viewpager);
 //        CustomArFragment customArFragment = (CustomArFragment) getSupportFragmentManager().findFragmentById(R.id.arFragment);
@@ -53,6 +69,14 @@ public class MainActivity extends AppCompatActivity {
         bottomNavigation.add(new MeowBottomNavigation.Model(2,R.drawable.ic_baseline_grid_on_24));
         bottomNavigation.add(new MeowBottomNavigation.Model(3,R.drawable.ic_baseline_music_note_24));
         bottomNavigation.add(new MeowBottomNavigation.Model(4,R.drawable.ic_baseline_account_circle_24));
+
+        _fullName = getIntent().getStringExtra("Fullname");
+        _email = getIntent().getStringExtra("Email");
+        _username = getIntent().getStringExtra("Username");
+        _password = getIntent().getStringExtra("Password");
+        _dob = getIntent().getStringExtra("DOB");
+        _gender = getIntent().getStringExtra("Gender");
+        _phoneNo = getIntent().getStringExtra("phoneNo");
 
         bottomNavigation.setOnShowListener(new MeowBottomNavigation.ShowListener() {
             @Override
@@ -71,16 +95,27 @@ public class MainActivity extends AppCompatActivity {
                         loadFragment(fragment);
                         break;
                     case 3:
-//                        fragment = new MusicFragment();
-                        Intent intent = new Intent(MainActivity.this,SnapActivity.class);
-                        startActivity(intent);
+                        fragment = new MusicFragment();
+                        bottomNavigation.setVisibility(View.GONE);
+//                        findViewById(R.id.relativeLayout).setVisibility(View.GONE);
+                        loadFragment(fragment);
+//                        Intent intent = new Intent(MainActivity.this,SnapActivity.class);
+//                        startActivity(intent);
                         break;
                     case 4:
                         fragment = new AccountFragment();
+                        Bundle bundle = new Bundle();
+                        bundle.putString("Fullname",_fullName);
+                        bundle.putString("Username",_username);
+                        bundle.putString("Password",_password);
+                        bundle.putString("Email",_email);
+                        bundle.putString("DOB",_dob);
+                        bundle.putString("Gender",_gender);
+                        bundle.putString("PhoneNo",_phoneNo);
+                        fragment.setArguments(bundle);
                         loadFragment(fragment);
                         break;
                 }
-
             }
         });
 
@@ -100,13 +135,25 @@ public class MainActivity extends AppCompatActivity {
                         loadFragment(fragment);
                         break;
                     case 3:
-//                        fragment = new MusicFragment();
-                        Intent intent = new Intent(MainActivity.this,SnapActivity.class);
-                        startActivity(intent);
+                        fragment = new MusicFragment();
+//                        findViewById(R.id.relativeLayout).setVisibility(View.GONE);
+                        bottomNavigation.setVisibility(View.GONE);
+                        loadFragment(fragment);
+//                        Intent intent = new Intent(MainActivity.this,SnapActivity.class);
+//                        startActivity(intent);
 
                         break;
                     case 4:
                         fragment = new AccountFragment();
+                        Bundle bundle = new Bundle();
+                        bundle.putString("Fullname",_fullName);
+                        bundle.putString("Username",_username);
+                        bundle.putString("Password",_password);
+                        bundle.putString("Email",_email);
+                        bundle.putString("DOB",_dob);
+                        bundle.putString("Gender",_gender);
+                        bundle.putString("PhoneNo",_phoneNo);
+                        fragment.setArguments(bundle);
                         loadFragment(fragment);
                         break;
                 }
@@ -348,10 +395,10 @@ public class MainActivity extends AppCompatActivity {
     public void addAccount(View view){
         Intent intent = new Intent(MainActivity.this,Startup_for_login_signup.class);
         startActivity(intent);
-        finish();
     }
 
     private void loadFragment(Fragment fragment) {
+
         getSupportFragmentManager().beginTransaction().replace(R.id.view,fragment).commit();
 
     }

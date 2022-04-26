@@ -3,6 +3,21 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/ISHAN/Desktop/ishan/AndroidStudioProjects/Rambaan/app/src/main/res/drawable/list_bg.xml" value="0.2115" />
+        <entry key="..\:/Users/ISHAN/Desktop/ishan/AndroidStudioProjects/Rambaan/app/src/main/res/layout/activity_login_first_screen.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/ISHAN/Desktop/ishan/AndroidStudioProjects/Rambaan/app/src/main/res/layout/activity_main.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/ISHAN/Desktop/ishan/AndroidStudioProjects/Rambaan/app/src/main/res/layout/activity_next_signup_screen.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/ISHAN/Desktop/ishan/AndroidStudioProjects/Rambaan/app/src/main/res/layout/activity_output.xml" value="0.17074275362318841" />
+        <entry key="..\:/Users/ISHAN/Desktop/ishan/AndroidStudioProjects/Rambaan/app/src/main/res/layout/activity_player.xml" value="0.17074275362318841" />
+        <entry key="..\:/Users/ISHAN/Desktop/ishan/AndroidStudioProjects/Rambaan/app/src/main/res/layout/activity_show_capture.xml" value="0.17074275362318841" />
+        <entry key="..\:/Users/ISHAN/Desktop/ishan/AndroidStudioProjects/Rambaan/app/src/main/res/layout/activity_signup_first_screen.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/ISHAN/Desktop/ishan/AndroidStudioProjects/Rambaan/app/src/main/res/layout/activity_third_signup_screen.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/ISHAN/Desktop/ishan/AndroidStudioProjects/Rambaan/app/src/main/res/layout/activity_verify_otp.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/ISHAN/Desktop/ishan/AndroidStudioProjects/Rambaan/app/src/main/res/layout/fragment_account.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/ISHAN/Desktop/ishan/AndroidStudioProjects/Rambaan/app/src/main/res/layout/fragment_home.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/ISHAN/Desktop/ishan/AndroidStudioProjects/Rambaan/app/src/main/res/layout/fragment_music.xml" value="0.17074275362318841" />
+        <entry key="..\:/Users/ISHAN/Desktop/ishan/AndroidStudioProjects/Rambaan/app/src/main/res/layout/fragment_player.xml" value="0.21" />
+        <entry key="..\:/Users/ISHAN/Desktop/ishan/AndroidStudioProjects/Rambaan/app/src/main/res/layout/list_item.xml" value="0.22" />
         <entry key="..\:/Users/user/AndroidStudioProjects/Rambaan/app/src/main/res/drawable/black_border.xml" value="0.2203125" />
         <entry key="..\:/Users/user/AndroidStudioProjects/Rambaan/app/src/main/res/drawable/button_bg.xml" value="0.1925925925925926" />
         <entry key="..\:/Users/user/AndroidStudioProjects/Rambaan/app/src/main/res/drawable/edit_text_bg.xml" value="0.1925925925925926" />

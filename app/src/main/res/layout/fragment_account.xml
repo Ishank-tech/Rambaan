@@ -1,18 +1,312 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:id="@+id/account"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".AccountFragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="ACCOUNT FRAGMENT"
-        android:textSize="48sp"
-        android:fontFamily="@font/arbutus_slab"
-        android:layout_gravity="center"
-        android:gravity="center"/>
+<!--    <TextView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="ACCOUNT FRAGMENT"-->
+<!--        android:textSize="48sp"-->
+<!--        android:fontFamily="@font/arbutus_slab"-->
+<!--        android:layout_gravity="center"-->
+<!--        android:gravity="center"/>-->
 
-</FrameLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:background="#fece2f"
+            android:padding="20dp">
+
+            <ImageView
+                android:id="@+id/profile_image"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerVertical="true"
+                app:tint="@color/black"
+                android:src="@drawable/ic_baseline_person" />
+
+            <TextView
+                android:id="@+id/full_name_field"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/profile_image"
+                android:fontFamily="@font/shrikhand"
+                android:includeFontPadding="false"
+                android:text="Ishank Gupta"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/username_field"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/full_name_field"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/profile_image"
+                android:includeFontPadding="false"
+                android:text="ishank_gupta"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/imageButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="Reach"
+                android:text="Back" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="185dp"
+                android:id="@+id/log"
+                android:layout_toRightOf="@id/imageButton"
+                android:text="LOGOUT" />
+
+
+        </RelativeLayout>
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="-100dp"-->
+<!--            android:padding="20dp">-->
+
+<!--&lt;!&ndash;            <com.google.android.material.card.MaterialCardView&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_width="0dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_height="125dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_margin="10dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_weight="1"&ndash;&gt;-->
+<!--&lt;!&ndash;                app:cardBackgroundColor="#fece2f"&ndash;&gt;-->
+<!--&lt;!&ndash;                app:cardElevation="10dp">&ndash;&gt;-->
+
+<!--&lt;!&ndash;                <RelativeLayout&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:layout_width="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:layout_height="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:padding="5dp">&ndash;&gt;-->
+
+<!--&lt;!&ndash;                    <ImageView&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:layout_width="30dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:layout_height="30dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:layout_centerHorizontal="true"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:src="@drawable/ic_baseline_sentiment_very_dissatisfied" />&ndash;&gt;-->
+
+<!--&lt;!&ndash;                    <TextView&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:id="@+id/lost_label"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:layout_width="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:layout_centerInParent="true"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:fontFamily="@font/bungee"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:includeFontPadding="false"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:text="15"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:textSize="20sp" />&ndash;&gt;-->
+
+<!--&lt;!&ndash;                    <TextView&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:id="@+id/lost_desc"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:layout_width="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:layout_below="@id/lost_label"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:layout_centerHorizontal="true"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:includeFontPadding="false"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:text="@string/loses"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:textSize="14sp" />&ndash;&gt;-->
+
+<!--&lt;!&ndash;                </RelativeLayout>&ndash;&gt;-->
+
+<!--&lt;!&ndash;            </com.google.android.material.card.MaterialCardView>&ndash;&gt;-->
+
+<!--&lt;!&ndash;            <com.google.android.material.card.MaterialCardView&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_width="0dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_height="125dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_margin="10dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_weight="1"&ndash;&gt;-->
+<!--&lt;!&ndash;                app:cardBackgroundColor="#fece2f"&ndash;&gt;-->
+<!--&lt;!&ndash;                app:cardElevation="10dp">&ndash;&gt;-->
+
+<!--&lt;!&ndash;                <RelativeLayout&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:layout_width="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:layout_height="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:padding="5dp">&ndash;&gt;-->
+
+<!--&lt;!&ndash;                    <ImageView&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:layout_width="30dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:layout_height="30dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:layout_centerHorizontal="true"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:src="@drawable/ic_baseline_sentiment_satisfied_alt" />&ndash;&gt;-->
+
+<!--&lt;!&ndash;                    <TextView&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:id="@+id/win_label"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:layout_width="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:layout_centerInParent="true"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:fontFamily="@font/bungee"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:includeFontPadding="false"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:text="50"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:textSize="20sp" />&ndash;&gt;-->
+
+<!--&lt;!&ndash;                    <TextView&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:id="@+id/win_desc"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:layout_width="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:layout_below="@id/win_label"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:layout_centerHorizontal="true"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:includeFontPadding="false"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:text="@string/wins"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:textSize="14sp" />&ndash;&gt;-->
+
+<!--&lt;!&ndash;                </RelativeLayout>&ndash;&gt;-->
+
+<!--&lt;!&ndash;            </com.google.android.material.card.MaterialCardView>&ndash;&gt;-->
+
+<!--        </LinearLayout>-->
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/full_name_profile"
+                android:layout_marginBottom="10dp"
+                android:hint="FullName">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_baseline_person"
+                    android:drawableTint="@color/black"
+                    android:drawablePadding="10dp"
+                    android:text="" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+<!--            <com.google.android.material.textfield.TextInputLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:id="@+id/Username_profile"-->
+<!--                android:layout_marginBottom="10dp"-->
+<!--                android:hint="Username">-->
+
+<!--                <com.google.android.material.textfield.TextInputEditText-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:drawableLeft="@drawable/ic_baseline_person_outline"-->
+<!--                    android:drawableTint="@color/black"-->
+<!--                    android:drawablePadding="10dp"-->
+<!--                    android:text="" />-->
+
+<!--            </com.google.android.material.textfield.TextInputLayout>-->
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/email_profile"
+                android:layout_marginBottom="10dp"
+                android:hint="Email">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/email"
+                    android:drawableTint="@color/black"
+                    android:drawablePadding="10dp"
+                    android:text="" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/gender_profile"
+                android:layout_marginBottom="10dp"
+                android:hint="Gender">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_baseline_wc"
+                    android:drawableTint="@color/black"
+                    android:drawablePadding="10dp"
+                    android:text="" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/Dob_profile"
+                android:layout_marginBottom="10dp"
+                android:hint="Dob">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_baseline_calendar_today_24"
+                    android:drawableTint="@color/black"
+                    android:drawablePadding="10dp"
+                    android:text="" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/phone_no_profile"
+                android:layout_marginBottom="10dp"
+                android:hint="Phone Number">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_baseline_phone"
+                    android:drawableTint="@color/black"
+                    android:drawablePadding="10dp"
+                    android:text="" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/password_profile"
+                android:layout_marginBottom="10dp"
+                android:hint="Password">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_baseline_security"
+                    android:drawableTint="@color/black"
+                    android:drawablePadding="10dp"
+                    android:text="" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@color/black"
+                android:fontFamily="@font/shrikhand"
+                android:text="Update"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

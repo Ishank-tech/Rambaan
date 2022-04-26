@@ -19,13 +19,11 @@ public class Startup_for_login_signup extends AppCompatActivity {
     public void Signup(View view){
         Intent intent = new Intent(Startup_for_login_signup.this,Signup_first_screen.class);
         startActivity(intent);
-        finish();
     }
 
     public void Login(View view){
         Intent intent = new Intent(Startup_for_login_signup.this,Login_first_screen.class);
         startActivity(intent);
-        finish();
     }
 
 }

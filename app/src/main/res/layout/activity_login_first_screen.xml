@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:id="@+id/login"
     tools:context=".Login_first_screen"
     android:padding="30dp"
     android:background="@color/countBackgroundColor">
@@ -13,15 +14,15 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-    <ImageView
-        android:id="@+id/back_btn"
-        android:layout_width="48dp"
-        android:layout_height="48dp"
-        android:padding="5dp"
-        android:contentDescription="backButtontoSignupFrament"
-        app:tint="@color/black"
-        app:srcCompat="@drawable/ic_baseline_arrow_back"
-        android:onClick="back2"/>
+<!--    <ImageView-->
+<!--        android:id="@+id/back_btn"-->
+<!--        android:layout_width="48dp"-->
+<!--        android:layout_height="48dp"-->
+<!--        android:padding="5dp"-->
+<!--        android:contentDescription="backButtontoSignupFrament"-->
+<!--        app:tint="@color/black"-->
+<!--        app:srcCompat="@drawable/ic_baseline_arrow_back"-->
+<!--        android:onClick="back2"/>-->
 
     <TextView
         android:layout_width="wrap_content"
@@ -40,17 +41,17 @@
             android:layout_marginTop="30dp">
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/email"
+        android:id="@+id/phone"
         style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/edit_text_bg"
         android:gravity="center"
-        android:hint="Email"
+        android:hint="Phone"
         android:paddingLeft="20dp"
         android:paddingTop="10dp"
         android:paddingBottom="10dp"
-        app:startIconDrawable="@drawable/email"
+        app:startIconDrawable="@drawable/ic_baseline_phone"
         app:startIconTint="@color/black"
         app:endIconMode="clear_text"
         app:endIconTint="@color/black">
@@ -58,7 +59,7 @@
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="55dp"
-            android:inputType="textEmailAddress" />
+            android:inputType="phone" />
 
     </com.google.android.material.textfield.TextInputLayout>
 

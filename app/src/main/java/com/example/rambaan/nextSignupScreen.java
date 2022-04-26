@@ -70,7 +70,6 @@ public class nextSignupScreen extends AppCompatActivity {
             intent.putExtras(bundle);
         }*/
         startActivity(intent);
-        finish();
     }
 
     private Boolean validateGender(){

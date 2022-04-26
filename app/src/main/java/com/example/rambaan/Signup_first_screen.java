@@ -14,7 +14,7 @@ public class Signup_first_screen extends AppCompatActivity {
 
     TextInputLayout fullname, email, username, password;
     Button nextScreen;
-    ImageView backBtn;
+//    ImageView backBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,7 +26,7 @@ public class Signup_first_screen extends AppCompatActivity {
         username = (TextInputLayout)findViewById(R.id.signup_username);
         password = (TextInputLayout)findViewById(R.id.signup_password);
         nextScreen = findViewById(R.id.next_screen2);
-        backBtn = findViewById(R.id.back_btn2);
+//        backBtn = findViewById(R.id.back_btn2);
         nextScreen.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -46,7 +46,6 @@ public class Signup_first_screen extends AppCompatActivity {
                 in.putExtra("Username",_username);
                 in.putExtra("Password",_pass);
                 startActivity(in);
-                finish();
             }
         });
     }
@@ -70,10 +69,10 @@ public class Signup_first_screen extends AppCompatActivity {
         startActivity(in);
     }*/
 
-    public void BackToStartup(View view){
-        Intent intent = new Intent(Signup_first_screen.this,Startup_for_login_signup.class);
-        startActivity(intent);
-    }
+//    public void BackToStartup(View view){
+//        Intent intent = new Intent(Signup_first_screen.this,Startup_for_login_signup.class);
+//        startActivity(intent);
+//    }
 
     private boolean validateFullname(){
         String val = fullname.getEditText().getText().toString().trim();

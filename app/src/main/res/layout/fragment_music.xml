@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -7,7 +7,7 @@
     tools:context=".MusicFragment">
 
     <!-- TODO: Update blank fragment layout -->
-    
+
     <!--<fragment
         android:id="@+id/arFragment"
         android:name="com.example.rambaan.MusicFragment"
@@ -18,15 +18,64 @@
     <!--<SurfaceView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/surfaceView"/>
+        android:id="@+id/surfaceView"/>-->
 
     <ImageView
+        android:id="@+id/capture"
         android:layout_width="48dp"
         android:layout_height="48dp"
-        android:id="@+id/capture"
+        android:layout_alignParentBottom="true"
         android:layout_gravity="bottom|center"
-        android:layout_marginBottom="20dp"
-        android:src="@drawable/ic_baseline_camera"
-        app:tint="@color/white"/>-->
+        android:layout_marginEnd="171dp"
+        android:layout_marginBottom="14dp"
+        android:layout_toStartOf="@+id/imageButton2"
+        android:contentDescription="capture"
+        android:src="@drawable/ic_baseline_camera" />
 
-</FrameLayout>
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="13dp"
+        android:layout_marginBottom="15dp"
+        android:contentDescription="gallery"
+        android:src="@drawable/ic_baseline_image" />
+
+    <ImageButton
+        android:id="@+id/flash"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="23dp"
+        android:layout_marginEnd="58dp"
+        android:layout_marginBottom="14dp"
+        android:layout_toStartOf="@+id/capture"
+        android:contentDescription="gallery"
+        android:src="@drawable/ic_baseline_flash_on" />
+
+    <ImageButton
+        android:id="@+id/switchCamera"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="top|right"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="14dp"
+        android:layout_toStartOf="@+id/imageButton2"
+        android:contentDescription="gallery"
+        android:src="@drawable/ic_baseline_flip_camera_android" />
+
+    <FrameLayout
+        android:id="@+id/frameLayoutC"
+        android:layout_width="match_parent"
+        android:layout_height="657dp"
+        android:layout_above="@+id/capture"
+        android:layout_marginBottom="1dp">
+
+    </FrameLayout>
+
+</RelativeLayout>

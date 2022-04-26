@@ -15,7 +15,7 @@ import com.hbb20.CountryCodePicker;
 
 public class thirdSignupScreen extends AppCompatActivity {
 
-    ImageView backBtn;
+//    ImageView backBtn;
     Button phnNext;
     CountryCodePicker countryCodePicker;
     TextInputLayout phoneNo;
@@ -28,16 +28,16 @@ public class thirdSignupScreen extends AppCompatActivity {
         countryCodePicker = findViewById(R.id.cuntry_code_picker);
         phoneNo = (TextInputLayout) findViewById(R.id.phn_no_for_otp);
         phnNext  = findViewById(R.id.phn_no_next);
-        backBtn = findViewById(R.id.third_activity_back_btn);
-
-        backBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(thirdSignupScreen.this,nextSignupScreen.class);
-                startActivity(intent);
-                finish();
-            }
-        });
+//        backBtn = findViewById(R.id.third_activity_back_btn);
+//
+//        backBtn.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent intent = new Intent(thirdSignupScreen.this,nextSignupScreen.class);
+//                startActivity(intent);
+//                finish();
+//            }
+//        });
 
         phnNext.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -27,11 +27,22 @@ import com.google.firebase.database.FirebaseDatabase;
 import java.util.concurrent.TimeUnit;
 
 public class VerifyOTP extends AppCompatActivity {
-    Button verify;
+    private Button verify;
     PinView pinFromUser;
     String codeBySystem;
 
     String fullname, phoneNo, email, username, password, dob, gender;
+//    FirebaseAuth firebaseAuth;
+//
+//    @Override
+//    protected void onStart() {
+//        super.onStart();
+//        FirebaseUser user = firebaseAuth.getCurrentUser();
+//        if(user!=null){
+//            Intent intent = new Intent(this, MainActivity.class);
+//            startActivity(intent);
+//        }
+//    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -61,17 +72,17 @@ public class VerifyOTP extends AppCompatActivity {
                 }
             }
         });
-
     }
 
     private void sendVerificationCodeToUser(String phoneNo) {
         FirebaseAuth mAuth = FirebaseAuth.getInstance();
+//        mAuth.getFirebaseAuthSettings().setAppVerificationDisabledForTesting(true);
 
         PhoneAuthOptions options =
                 PhoneAuthOptions.newBuilder(mAuth)
                         .setPhoneNumber(phoneNo)       // Phone number to verify
                         .setTimeout(60L, TimeUnit.SECONDS) // Timeout and unit
-                        .setActivity(this)                 // Activity (for callback binding)
+                        .setActivity(VerifyOTP.this)                 // Activity (for callback binding)
                         .setCallbacks(mCallbacks)          // OnVerificationStateChangedCallbacks
                         .build();
         PhoneAuthProvider.verifyPhoneNumber(options);
@@ -116,7 +127,9 @@ public class VerifyOTP extends AppCompatActivity {
                         if (task.isSuccessful()) {
 
                             storeNewUsersData();
+//                            FirebaseUser user = firebaseAuth.getCurrentUser();
                             Intent intent = new Intent(VerifyOTP.this,MainActivity.class);
+//                            intent.putExtra("user",user);
                             intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
                             startActivity(intent);
 
@@ -139,10 +152,10 @@ public class VerifyOTP extends AppCompatActivity {
 
     }
 
-    public void callNextfromOTP(View view){
-        String code = pinFromUser.getText().toString();
-        if(!code.isEmpty()){
-            verifyCode(code);
-        }
-    }
+//    public void callNextfromOTP(View view){
+//        String code = pinFromUser.getText().toString();
+//        if(!code.isEmpty()){
+//            verifyCode(code);
+//        }
+//    }
 }
